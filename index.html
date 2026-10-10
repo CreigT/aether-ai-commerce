@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AetherCommerce | Autonomous AI Commerce</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">Aether<span>Commerce</span></div>
+      <ul class="nav-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#agents">Agents</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#pricing" class="btn btn-primary">Start Free</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">New · Fully Autonomous AI Agents Live</div>
+      <h1>AI agents that <em>quietly</em> run your entire commerce business.</h1>
+      <p>Product research, pricing, marketing, support, finance, and more — all handled 24/7 by specialized AI agents. You are the legal owner. The agents do the work.</p>
+      <div class="hero-ctas">
+        <a href="#store" class="btn btn-primary">Explore AI Store</a>
+        <a href="#pricing" class="btn btn-secondary">View Plans</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="agent-card">
+        <div class="agent-header">Live Agent Status</div>
+        <div class="agent-row"><span>Product Research</span><span class="status online">Online</span></div>
+        <div class="agent-row"><span>Pricing Agent</span><span class="status online">Online</span></div>
+        <div class="agent-row"><span>Customer Support</span><span class="status online">Online</span></div>
+        <div class="agent-row"><span>Marketing</span><span class="status online">Online</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <h2>How It Works</h2>
+    <p class="section-sub">Three simple steps. The agents handle the rest.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Connect</h3>
+        <p>Add your variables (Stripe keys, domain, brand). Push to Vercel. Done.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Agents Activate</h3>
+        <p>Specialized agents research products, set prices, create content, and manage operations autonomously.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Profit</h3>
+        <p>Monitor KPIs. Override only when needed. The system improves itself continuously.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="agents" class="section dark">
+    <h2>The Agent Ecosystem</h2>
+    <p class="section-sub">Every business function covered by dedicated AI agents.</p>
+    <div class="agent-grid">
+      <div class="agent-item">Executive Layer — Strategy & Governance</div>
+      <div class="agent-item">Revenue Layer — Sales, Marketing, SEO</div>
+      <div class="agent-item">Customer Layer — Support & Success</div>
+      <div class="agent-item">Commerce Layer — Products & Inventory</div>
+      <div class="agent-item">Finance Layer — Accounting & Cash Flow</div>
+      <div class="agent-item">Legal & Compliance</div>
+      <div class="agent-item">Cybersecurity & Infrastructure</div>
+      <div class="agent-item">Data, Analytics & AI Optimization</div>
+    </div>
+  </section>
+
+  <section id="store" class="section">
+    <h2>AI-Researched Products</h2>
+    <p class="section-sub">Sample products discovered and priced by the Product Research Agent.</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-img">Digital Guide</div>
+        <h3>AI Automation Playbook</h3>
+        <p>$29</p>
+        <button class="btn btn-primary add-to-cart" data-name="AI Automation Playbook" data-price="29">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="product-img">Template</div>
+        <h3>Commerce Agent Prompts</h3>
+        <p>$49</p>
+        <button class="btn btn-primary add-to-cart" data-name="Commerce Agent Prompts" data-price="49">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="product-img">Course</div>
+        <h3>Autonomous Store Setup</h3>
+        <p>$99</p>
+        <button class="btn btn-primary add-to-cart" data-name="Autonomous Store Setup" data-price="99">Add to Cart</button>
+      </div>
+    </div>
+    <div id="cart" class="cart hidden">
+      <h3>Cart</h3>
+      <div id="cart-items"></div>
+      <p>Total: $<span id="cart-total">0</span></p>
+      <a href="https://buy.stripe.com/test_placeholder" class="btn btn-primary" id="checkout-btn">Checkout</a>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <h2>Reasonable Paywalls</h2>
+    <p class="section-sub">Start free. Scale as your autonomous store grows.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <div class="price">$0</div>
+        <ul>
+          <li>Basic landing & store</li>
+          <li>1 AI agent simulation</li>
+          <li>Community support</li>
+        </ul>
+        <a href="#" class="btn btn-secondary">Current Plan</a>
+      </div>
+      <div class="price-card featured">
+        <h3>Pro</h3>
+        <div class="price">$29<span>/mo</span></div>
+        <ul>
+          <li>Full agent ecosystem</li>
+          <li>Dynamic pricing & marketing</li>
+          <li>Priority support</li>
+          <li>Custom branding</li>
+        </ul>
+        <a href="https://buy.stripe.com/test_placeholder_pro" class="btn btn-primary">Upgrade to Pro</a>
+      </div>
+      <div class="price-card">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <ul>
+          <li>Multi-store</li>
+          <li>Dedicated agents</li>
+          <li>SLA & compliance</li>
+          <li>White-label</li>
+        </ul>
+        <a href="mailto:hello@aethercommerce.ai" class="btn btn-secondary">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section dark">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Do I need to operate the agents daily?</summary>
+      <p>No. The system runs 24/7. You only add variables and handle legal/emergency overrides.</p>
+    </details>
+    <details>
+      <summary>How do I deploy this?</summary>
+      <p>Push this repo to GitHub, import into Vercel, add your Stripe keys and any env variables. That's it.</p>
+    </details>
+    <details>
+      <summary>Is this production ready?</summary>
+      <p>Yes. Modular, API-first concepts, secure by design, and fully static for zero-maintenance hosting.</p>
+    </details>
+  </section>
+
+  <footer class="footer">
+    <p>AetherCommerce · Autonomous AI Commerce · Day 1 Module</p>
+    <p>Human owner: Legal & Override only</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
